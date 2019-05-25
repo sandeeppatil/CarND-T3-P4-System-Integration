@@ -144,4 +144,5 @@ Specific to these libraries, the simulator grader and Carla use the following:
 We are working on a fix to line up the OpenCV versions between the two.
 
 
-
+https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/
+https://answers.ros.org/question/259448/catkin_make-fails-with-invalid-package-manifest/

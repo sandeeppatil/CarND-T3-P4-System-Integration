@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 import rospy
 from geometry_msgs.msg import PoseStamped
@@ -58,6 +58,8 @@ class WaypointUpdater(object):
     def get_closest_waypoint_idx(self):
         x = self.pose.pose.position.x
         y = self.pose.pose.position.y
+        print("x: ", x)
+        print("y: ", y)
         closest_idx = self.waypoints_tree.query([x,y],1)[1]
 
         #check it closest is ahead or behind vehicle
@@ -91,7 +93,7 @@ class WaypointUpdater(object):
 
         if not self.waypoints_2d:
             self.waypoints_2d  = [[waypoint.pose.pose.position.x, waypoint.pose.pose.position.y] for waypoint in waypoints.waypoints]
-            self.waypoint_tree = KDTree(self.waypoints_2d)
+            self.waypoints_tree = KDTree(self.waypoints_2d)
 
     def traffic_cb(self, msg):
         # TODO: Callback for /traffic_waypoint message. Implement
