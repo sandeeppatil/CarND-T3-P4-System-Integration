@@ -5,7 +5,15 @@
 2. Installed ROS Package Dependencies using below command
 
 ```bash
+pip install --force-reinstall -U setuptools
+pip install --force-reinstall -U pip
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
+bash <(wget -q -O - https://bitbucket.org/DataspeedInc/dbw_mkz_ros/raw/default/dbw_mkz/scripts/sdk_install.bash)
+
+
 rosdep install --from-paths src --ignore-src -r -y
+pip install --upgrade catkin_pkg
 ```
 
 
