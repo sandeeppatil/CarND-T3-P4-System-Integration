@@ -158,4 +158,7 @@ We are working on a fix to line up the OpenCV versions between the two.
 
 
 https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/
+
+http://wiki.ros.org/kinetic/Installation/Ubuntu
+
 https://answers.ros.org/question/259448/catkin_make-fails-with-invalid-package-manifest/
