@@ -37,33 +37,12 @@ pip install opencv-python
 1. Waypoint Updater (Full): Use /traffic_waypoint to change the waypoint target velocities before publishing to /final_waypoints. Your car should now stop at red traffic lights and move when they are green.
 
 
-### ROS Packages
-
-1. tl_detector
-
-    *Description:*
-    - This package contains the traffic light detection node: tl_detector.py. This node takes in data from the /image_color, /current_pose, and /base_waypoints topics and publishes the locations to stop for red traffic lights to the /traffic_waypoint topic.
-
-    - The /current_pose topic provides the vehicle's current position, and /base_waypoints provides a complete list of waypoints the car will be following.
-
-    - **Traffic light detection** should take place within tl_detector.py, whereas **traffic light classification** should take place within ../tl_detector/light_classification_model/tl_classfier.py.
-
-    *Input:*
-    - image_color
-    - current_pose
-    - base_waypoints
-
-    *Output:*
-    - traffic_waypoint
 
 ### System Design
 
 ![](./imgs/final-project-ros-graph-v2.png)
 ---
----
----
----
----
+
 
 This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. For more information about the project, see the project introduction [here](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2/modules/e1a23b06-329a-4684-a717-ad476f0d8dff/lessons/462c933d-9f24-42d3-8bdc-a08a5fc866e4/concepts/5ab4b122-83e6-436d-850f-9f4d26627fd9).
 
@@ -154,8 +133,8 @@ Specific to these libraries, the simulator grader and Carla use the following:
 | OpenCV | 3.2.0-dev | 2.4.8 |
 | OpenMP | N/A | N/A |
 
-We are working on a fix to line up the OpenCV versions between the two.
 
+reference links:
 
 https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/
 
